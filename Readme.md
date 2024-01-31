@@ -5,7 +5,7 @@ O repositório contém o código usado no processo e as respostas para as quest�
 ---
 
 ### Dia 1 - Criação da Classe do Yahoo
-branch: origin/dia_01
+**branch: origin/dia_01**
 
 Meu plano era fazer um RPA usando a lib [Playwtight](https://playwright.dev/python/docs/api/class-playwright) 
 (tem se comportado melhor que o selenium nos meus desenvolvimentos).

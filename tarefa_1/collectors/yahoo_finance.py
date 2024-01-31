@@ -49,7 +49,7 @@ def create_flash_collector(
         exporter = lambda x: x
     return FlashCollector(base_url, target, start_date, end_date, exporter)
 
-def load_json_config(json_config) -> FlashCollector:
+def load_json_config(json_config) -> dict:
     return json.loads(open(json_config).read())
 
 if __name__ == '__main__':
