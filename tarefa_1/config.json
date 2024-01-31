@@ -3,23 +3,23 @@
   "white_label_download_url": "https://query1.finance.yahoo.com/v7/finance/download/{quote_tag}?period1={start_date}&period2={end_date}&interval=1d&events=history&includeAdjustedClose=true",
   "targets": [
     {
-      "quote": "META",
+      "quote_tag": "META",
       "company": "Meta Platforms, Inc. (META)"
     },
     {
-      "quote": "AMZN",
+      "quote_tag": "AMZN",
       "company": "Amazon.com, Inc. (AMZN)"
     },
     {
-      "quote": "AAPL",
+      "quote_tag": "AAPL",
       "company": "Apple Inc. (AAPL)"
     },
     {
-      "quote": "NFLX",
+      "quote_tag": "NFLX",
       "company": "Netflix, Inc. (NFLX)"
     },
     {
-      "quote": "GOOG",
+      "quote_tag": "GOOG",
       "company": "Alphabet, Inc. (GOOG)"
     }
   ]
