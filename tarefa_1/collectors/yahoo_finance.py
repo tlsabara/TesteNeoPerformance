@@ -1,5 +1,5 @@
 import json
-from typing import Any, Optional
+from typing import Any, Optional, Callable
 from pydantic import validate_call
 import json
 import pandas as pd
@@ -9,8 +9,8 @@ from tarefa_1.collectors.bases import BaseCollector
 
 class FlashCollector(BaseCollector):
 
-    # @validate_call
-    def __init__(self, url:str, target:str, start_date:str, end_date:str, exporter: None = None):
+    @validate_call
+    def __init__(self, url:str, target:str, start_date:str, end_date:str, exporter: Optional[Callable] = None):
         self.url = url
         self.target = target
         self.start_date = start_date
@@ -32,13 +32,13 @@ class FlashCollector(BaseCollector):
         return self.exporter(self.df)
 
 
-# @validate_call
+@validate_call
 def create_flash_collector(
         base_url:str,
         target:str,
         start_date:Optional[str] = None,
         end_date:Optional[str] = None,
-        exporter: None = None
+        exporter: Optional[Callable] = None
 ) -> FlashCollector:
 
     if not start_date:
@@ -46,7 +46,7 @@ def create_flash_collector(
     if not end_date:
         end_date = str(int(datetime.now().timestamp()))
     if not exporter:
-        exporter = lambda df: df
+        exporter = lambda x: x
     return FlashCollector(base_url, target, start_date, end_date, exporter)
 
 def load_json_config(json_config) -> FlashCollector:
