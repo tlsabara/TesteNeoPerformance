@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.11 (be_vert_rpa)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (be_vert_rpa)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="testeNeoPerformance" project-jdk-type="Python SDK" />
 </project>
