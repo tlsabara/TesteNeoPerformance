@@ -1,0 +1,26 @@
+{
+  "white_label_site_url": "https://finance.yahoo.com/quote/{quote_tag}/history?period1={start_date}&period2={end_date}&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true",
+  "white_label_download_url": "https://query1.finance.yahoo.com/v7/finance/download/{quote_tag}?period1={start_date}&period2={end_date}&interval=1d&events=history&includeAdjustedClose=true",
+  "targets": [
+    {
+      "quote_tag": "META",
+      "company": "Meta Platforms, Inc. (META)"
+    },
+    {
+      "quote_tag": "AMZN",
+      "company": "Amazon.com, Inc. (AMZN)"
+    },
+    {
+      "quote_tag": "AAPL",
+      "company": "Apple Inc. (AAPL)"
+    },
+    {
+      "quote_tag": "NFLX",
+      "company": "Netflix, Inc. (NFLX)"
+    },
+    {
+      "quote_tag": "GOOG",
+      "company": "Alphabet, Inc. (GOOG)"
+    }
+  ]
+}
