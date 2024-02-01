@@ -1,3 +1,4 @@
 .env
 .pyc
 /.idea
+client_secrets.json
