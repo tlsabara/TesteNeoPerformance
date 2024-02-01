@@ -4,23 +4,28 @@
   "targets": [
     {
       "quote_tag": "META",
-      "company": "Meta Platforms, Inc. (META)"
+      "company": "Meta Platforms, Inc. (META)",
+      "active": true
     },
     {
       "quote_tag": "AMZN",
-      "company": "Amazon.com, Inc. (AMZN)"
+      "company": "Amazon.com, Inc. (AMZN)",
+      "active": true
     },
     {
       "quote_tag": "AAPL",
-      "company": "Apple Inc. (AAPL)"
+      "company": "Apple Inc. (AAPL)",
+      "active": true
     },
     {
       "quote_tag": "NFLX",
-      "company": "Netflix, Inc. (NFLX)"
+      "company": "Netflix, Inc. (NFLX)",
+      "active": true
     },
     {
       "quote_tag": "GOOG",
-      "company": "Alphabet, Inc. (GOOG)"
+      "company": "Alphabet, Inc. (GOOG)",
+      "active": true
     }
   ]
 }
