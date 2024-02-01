@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 from tarefa_1.collectors.bases import BaseCollector
 
 
-class FlashCollector(BaseCollector):
+class FastCollector(BaseCollector):
 
     @validate_call
     def __init__(self, url:str, target:str, start_date:str, end_date:str, exporter: Optional[Callable] = None):
@@ -39,7 +39,7 @@ def create_flash_collector(
         start_date:Optional[str] = None,
         end_date:Optional[str] = None,
         exporter: Optional[Callable] = None
-) -> FlashCollector:
+) -> FastCollector:
 
     if not start_date:
         start_date = str(int((datetime.now() - timedelta(days=365)).timestamp()))
@@ -47,10 +47,12 @@ def create_flash_collector(
         end_date = str(int(datetime.now().timestamp()))
     if not exporter:
         exporter = lambda x: x
-    return FlashCollector(base_url, target, start_date, end_date, exporter)
+    return FastCollector(base_url, target, start_date, end_date, exporter)
+
 
 def load_json_config(json_config) -> dict:
     return json.loads(open(json_config).read())
+
 
 if __name__ == '__main__':
     config = load_json_config(r"/home/tlsabara/git_unix/TesteNeoPerformance/tarefa_1/config.json")
