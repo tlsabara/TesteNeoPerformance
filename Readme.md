@@ -44,3 +44,17 @@ Mas o upload será realizado com certeza!
 O plano de amanhã será realizar o desenvolvimento da rotina a ser executada.
 
 ---
+### 01/02/2024 - Dia 3 - Finalizando a parte 1
+**branch: origin/dia_03**
+
+Finalizei o script com as classes criadas nos dias anteriores, e todo o pacote da tarefa_1 juntamente com os arquivos 
+"config.json", "settings_t.yaml" e "session.json", além de config do ambiente (ou o ".env") executam completamente a tarefa de 
+Extrair os dados do Yahoo e fazer o upload no sheets.
+
+Tive problemas pois havia me planejado para usar um CSV mas a integração entre drive e lookerstudio é muito mais simples com 
+o sheets/xlsx, mas consegui resolver tranquilamente.
+
+O maior desafio do dia foi o lookerstudio, na parte de montagem da vizualização, ja usei ele há muito tempo e não lembrava mais nada. 
+No fim gostei do resultado.
+
+
