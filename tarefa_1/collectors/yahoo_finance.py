@@ -50,11 +50,11 @@ def create_flash_collector(
     return FastCollector(base_url, target, start_date, end_date, exporter)
 
 
-def load_json_config(json_config) -> dict:
-    return json.loads(open(json_config).read())
 
 
 if __name__ == '__main__':
+    from tarefa_1.task_utils import load_json_config
+
     config = load_json_config(r"/home/tlsabara/git_unix/TesteNeoPerformance/tarefa_1/config.json")
     flash_collector = create_flash_collector(
         base_url=config["white_label_download_url"],

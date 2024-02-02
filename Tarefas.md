@@ -13,10 +13,10 @@ P: Suponha que você precise acionar esse script todos os dias, de hora em hora.
 
 
 ### Elementos que considero cruciais:
-Conta de serviço para utilizar serviços da cloud e google sheets.
-Google Secrets para garantir segurança de senhas e outros dados sensíveis.
-Orquestrador. Pode ser tanto o Composer como o Cloud Scheduler para acionar rotinas na frequência estipulada.
-Hospedagem do Script, podendo ser no Cloud Functions, Cloud Run Storage ou Outro.
+- Conta de serviço para utilizar serviços da cloud e google sheets.
+- Google Secrets para garantir segurança de senhas e outros dados sensíveis.
+- Orquestrador. Pode ser tanto o Composer como o Cloud Scheduler para acionar rotinas na frequência estipulada.
+- Hospedagem do Script, podendo ser no Cloud Functions, Cloud Run Storage ou Outro.
 
 ---
 # Limpeza de Dados (ETL)
