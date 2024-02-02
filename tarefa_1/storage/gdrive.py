@@ -3,6 +3,8 @@ from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
 from typing import Any
 
+from pydrive.files import GoogleDriveFile
+
 
 class GoogleDriveHandler:
     def  __init__(self, config_file: str):
@@ -10,7 +12,20 @@ class GoogleDriveHandler:
         self.ggl_auth = GoogleAuth(settings_file=self.config_file)
         self.ggl_auth.LocalWebserverAuth()
         self.ggl_drive = GoogleDrive(self.ggl_auth)
-        self.ggl_file_instance = None
+        self.ggl_file_instance: GoogleDriveFile | None = None
+
+    def get_file_id_by_title(self, title: str) -> str:
+        try:
+            file_list = self.ggl_drive.ListFile({'q': f"title = '{title}' and trashed=false"}).GetList()
+            if len(file_list) == 1:
+                return file_list[0]['id']
+            elif len(file_list) > 1:
+                raise Exception(f"Encontrado {len(file_list)} arquivos com o mesmo nome {title}.")
+            else:
+                raise Exception(f"Nenhum arquivo encontrado com o nome {title}.")
+        except Exception as e:
+            raise Exception(f"Erro ao buscar arquivo {title}: {str(e)}")
+
 
     def link_file(self, id_file: str) -> GoogleDriveHandler:
         self.ggl_file_instance = self.ggl_drive.CreateFile({'id': id_file})
@@ -21,17 +36,17 @@ class GoogleDriveHandler:
         return self
 
     def upload_file(self) -> GoogleDriveHandler:
-        self.ggl_file_instance.Upload()
+        self.ggl_file_instance.Upload({'convert': True})
         return self
 
-    def create_file(self, title: str, content: Any | bytes | str = None) -> GoogleDriveHandler:
-        self.ggl_file_instance = self.ggl_drive.CreateFile({'title': title})
+    def create_file(self, title: str, content: Any | bytes | str = None, mime_type: str = "text/plain") -> GoogleDriveHandler:
+        self.ggl_file_instance = self.ggl_drive.CreateFile({'title': title, 'mimeType': mime_type})
         if content:
             self.set_content(content=content)
         return self
 
     def set_content(self, content: Any | bytes | str) -> GoogleDriveHandler:
-        self.ggl_file_instance.SetContentString(content)
+        self.ggl_file_instance.SetContentFile(content)
         return self
 
 
