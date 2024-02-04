@@ -3,7 +3,7 @@
 
 ### REQUISITOS:
  - docker e docker compose instalados. Veja mais no [Site oficial do Docker](https://docs.docker.com/engine/install/)
-
+ - acessar [Link do arquivo de dados no google](https://docs.google.com/spreadsheets/d/1Lo2p5XalsFpbAtBUyBZEKXkQN-GmBskwIAiJutgmWeg/edit?usp=sharing)
 ### Passo 1:
 Para executar a tarefa, adicione os arquivos (estes arquivos não foram compartilhados no repositório) `session.json`, `.env` e `settings_t.yaml`, à pasta tarefa_1.
 
