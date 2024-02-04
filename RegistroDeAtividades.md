@@ -1,4 +1,4 @@
-# Teste para a Vaga de Desenvolvedor Python com Foco em Dados na **NeoPerformance**
+**# Teste para a Vaga de Desenvolvedor Python com Foco em Dados na **NeoPerformance**
 
 O repositório contém o código usado no processo e as respostas para as questões.
 
@@ -69,5 +69,18 @@ Construí um pequeno pacote, contendo as funções para tratamentos usados no pr
 Todas as respostas estão no notebook do jupyter
 
 ---
+### 03/02/2024 - Dia 5 - Finalizando
+**branch: origin/dia_04** - Ajustes no explorer.ipynb
+**branch: origin/dia_05** - Desenvolvimento da Tarefa 2 e melhorias
+
+Planejo responder a questão mais com base em meu conhecimento de AWS e Azure, 
+buscando relacionar com os serviços da GCP.
+
+Tarefa 2 respondida dentro do plano.
+
+O Relatório do Google Looker quebrou, por problemas com a base de dados. Consegui resolver tranquilamente.
+
+Adicionado o Docker ao projeto e melhorias de documentação.
+
 
 

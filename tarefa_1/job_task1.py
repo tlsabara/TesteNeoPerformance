@@ -2,8 +2,8 @@ from  pathlib import Path
 import pandas as pd
 import logging
 from collectors.yahoo_finance import create_flash_collector
-from tarefa_1.exporters import df_to_xlsx
-from tarefa_1.storage.gdrive import GoogleDriveHandler
+from exporters import df_to_xlsx
+from storage.gdrive import GoogleDriveHandler
 from task_utils import load_json_config, delete_currency_file
 
 BASE_FOLDER = Path(__file__).parent

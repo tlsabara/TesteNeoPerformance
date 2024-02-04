@@ -2,3 +2,6 @@
 .pyc
 /.idea
 client_secrets.json
+/tarefa_1/settings_t.yaml
+/tarefa_1/session.json
+/.python-version
