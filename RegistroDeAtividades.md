@@ -71,7 +71,7 @@ Todas as respostas estão no notebook do jupyter
 ---
 ### 03/02/2024 - Dia 5 - Finalizando
 **branch: origin/dia_04** - Ajustes no explorer.ipynb
-**branch: origin/dia_05** - Desenvolvimento da Tarefa 2
+**branch: origin/dia_05** - Desenvolvimento da Tarefa 2 e melhorias
 
 Planejo responder a questão mais com base em meu conhecimento de AWS e Azure, 
 buscando relacionar com os serviços da GCP.
