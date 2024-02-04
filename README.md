@@ -15,4 +15,5 @@ Cada pasta de tarefa tem um arquivo README.md explicando o contexto, solução o
 
 ### Lembretes
 - Partes do projeto dependem de arquivos de configuração que não foram compartilhados no Repositório. Para conseguir estes arquivos entre em contato comigo.
+- Se você recebeu este repositório por email, o link do repositório é: https://github.com/tlsabara/TesteNeoPerformance
 
