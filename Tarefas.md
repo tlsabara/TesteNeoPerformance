@@ -9,7 +9,7 @@ P: Crie um script em Python para coletar dados históricos do Yahoo Finance. A s
 
 #### Tarefa 2
 
-P: Suponha que você precise acionar esse script todos os dias, de hora em hora. Como você estruturaria o script para implementá-lo na Google Cloud? Explique o fluxo, os serviços utilizados e quais suas funções. (Não é necessário implementar devido aos custos)
+P: Suponha que você precise acionar esse script244 todos os dias, de hora em hora. Como você estruturaria o script para implementá-lo na Google Cloud? Explique o fluxo, os serviços utilizados e quais suas funções. (Não é necessário implementar devido aos custos)
 
 
 ### Elementos que considero cruciais:
