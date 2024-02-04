@@ -2,10 +2,10 @@
 ## Automação de coleta de dados e visualização
 
 ### REQUISITOS:
- - docker e docker compose instalados. Veja mais em [Instalação do Docker](https://docs.docker.com/engine/install/)
+ - docker e docker compose instalados. Veja mais no [Site oficial do Docker](https://docs.docker.com/engine/install/)
 
 ### Passo 1:
-Para executar a tarefa, adicione os arquivos `session.json`, `.env` e `settings_t.yaml`, à pasta tarefa_1.
+Para executar a tarefa, adicione os arquivos (estes arquivos não foram compartilhados no repositório) `session.json`, `.env` e `settings_t.yaml`, à pasta tarefa_1.
 
 OBS: Se você esta acessando este repositório no GitHub pode me solictar os arquivos via email (thi.sil.sab@gmail.com)
 
@@ -15,12 +15,14 @@ Com os arquivos na pasta basta executar com o docker:
 docker compose build
 docker compose up
 ```
-OBS: sim execute sem o -d, pois o projeto executa em menos de 1 min, e você poderá ver o log.
+OBS: execute sem o `-d`, pois o projeto executa em menos de 1 min, e você poderá ver o log.
 
 ### Passo 3:
 
 Os dados ja estarão atualizados na minha fonte de dados e você pode acessar a vizualização [neste link](https://lookerstudio.google.com/reporting/e40e6ae6-c06e-429c-aa12-73026d94db33)
+Tem um delay de 15 min para atualização
 
 ---
 
-Se quiser que o arquivo processado vá para o seu google drive, basta apagar o session.json e fazer o login com sua conta.
+Se quiser que o arquivo processado vá para o seu Google Drive, basta apagar o session.json, e executar e fazer o login com sua conta.
+A minha aplicação no Google precisa de algumas permissões ao seu Google Drive. 
