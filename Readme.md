@@ -57,4 +57,17 @@ o sheets/xlsx, mas consegui resolver tranquilamente.
 O maior desafio do dia foi o lookerstudio, na parte de montagem da vizualização, ja usei ele há muito tempo e não lembrava mais nada. 
 No fim gostei do resultado.
 
+---
+### 03/02/2024 - Dia 4 - Q3
+**branch: origin/dia_04**
+
+Primeiramente realizei a questão 03, por ser mais prática.
+As respostas estão na pasta da tarefa_3. A base de dados, foi limpa conforme o exercicio solicita.
+
+Construí um pequeno pacote, contendo as funções para tratamentos usados no projeto.
+
+Todas as respostas estão no notebook do jupyter
+
+---
+
 
