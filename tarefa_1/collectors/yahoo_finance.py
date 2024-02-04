@@ -1,10 +1,8 @@
-import json
 from typing import Any, Optional, Callable
 from pydantic import validate_call
-import json
 import pandas as pd
 from datetime import datetime, timedelta
-from tarefa_1.collectors.bases import BaseCollector
+from collectors.bases import BaseCollector
 
 
 class FastCollector(BaseCollector):
